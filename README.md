@@ -2,9 +2,13 @@
 
 > Game built with vanilla javascript.
 
-## Screenshots
+Live demo [Guess Finger](https://techreagan.github.io/guess-finger/)
 
-<!-- ![Screenshot](screenshots/20%20-%20Sign%20in.jpg) -->
+## Demo
+
+> Delete the demo.gif file, (demo.gif 1.76mb)
+
+![demo](demo.gif)
 
 ## License
 
