@@ -38,19 +38,21 @@ UIfingers.addEventListener('click', (e) => {
   }
 })
 
-let timer = setInterval(startCountDown, 1000)
+window.addEventListener('load', () => {
+  let timer = setInterval(startCountDown, 1000)
 
-function startCountDown() {
-  countDown--
+  function startCountDown() {
+    countDown--
 
-  UIcountdownTimer.innerHTML = `00:${
-    countDown < 10 ? '0' + countDown : countDown
-  }`
+    UIcountdownTimer.innerHTML = `00:${
+      countDown < 10 ? '0' + countDown : countDown
+    }`
 
-  if (countDown === 0) {
-    clearInterval(timer)
-    alert('Game over')
-    countDown = 20
-    timer = setInterval(startCountDown, 1000)
+    if (countDown === 0) {
+      clearInterval(timer)
+      alert('Game over')
+      countDown = 20
+      timer = setInterval(startCountDown, 1000)
+    }
   }
-}
+})
